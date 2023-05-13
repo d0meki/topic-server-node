@@ -21,10 +21,14 @@ const verificarCI = async(req,res) =>{
             return res.json({ name: user.name});
     }
 }
+const verificarFoto = async(req,res) =>{
+    
+}
 
 
 module.exports = {
     getListaUsuarios,
-    verificarCI
+    verificarCI,
+    verificarFoto
 }
 

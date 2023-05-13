@@ -4,6 +4,8 @@ class Server {
 
     constructor(){
         this.app = express();
+        // this.port = process.env.PORT;
+        // no olvidar modificar las putas variables de entorno 
         this.port = process.env.PORT;
         // this.luxandPath = '/api/luxand';
         this.auth = '/api/auth'
@@ -34,7 +36,7 @@ class Server {
 
     listen (){
         this.app.listen( this.port, ()=>{
-            console.log('servidor corriendo en puerto',3000);
+            console.log('servidor corriendo en puerto',this.port);
         })
     }
 }
